@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="flex p-5 justify-between text-center z-30 bg-white">
+        <h1 class="font-bold text-4xl text-gray-900">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="  gap-10 hidden md:flex">
+            <p class="hover:underline cursor-pointer"> <a href="index.html"> Home </a></p>
+            <p class="hover:underline cursor-pointer"><a href="#">Collections</a></p>
+            <p class="hover:underline cursor-pointer"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </section>
+    <!-- Side Navbar -->    
+    <section id="sidenav"
+        class=" bg-gray-900 fixed z-50 text-white top-0 transition-all duration-1000 font-bold text-1xl"
+        style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p class="inline cursor-pointer font-bold" id="closenav">X</p>
+        </div>
+        <ul class=" flex flex-col gap-10 items-center">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Contact Us Section -->
+    <section>
+        <div class="isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+            <div aria-hidden="true"
+                class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-40rem)] sm:w-288.75">
+                </div>
+            </div>
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Contact sales</h2>
+                <p class="mt-2 text-lg/8 text-gray-400">Aute magna irure deserunt veniam aliqua magna enim voluptate.
+                </p>
+            </div>
+            <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                    <div>
+                        <label for="first-name" class="block text-sm/6 font-semibold text-white">First name</label>
+                        <div class="mt-2.5">
+                            <input id="first-name" type="text" name="first-name" autocomplete="given-name"
+                                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm/6 font-semibold text-white">Last name</label>
+                        <div class="mt-2.5">
+                            <input id="last-name" type="text" name="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="company" class="block text-sm/6 font-semibold text-white">Company</label>
+                        <div class="mt-2.5">
+                            <input id="company" type="text" name="company" autocomplete="organization"
+                                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="email" class="block text-sm/6 font-semibold text-white">Email</label>
+                        <div class="mt-2.5">
+                            <input id="email" type="email" name="email" autocomplete="email"
+                                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block text-sm/6 font-semibold text-white">Message</label>
+                        <div class="mt-2.5">
+                            <textarea id="message" name="message" rows="4"
+                                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4 sm:col-span-2">
+                        <div class="flex h-6 items-center">
+                            <div
+                                class="group relative inline-flex w-8 shrink-0 rounded-full bg-white/5 p-px inset-ring inset-ring-white/10 outline-offset-2 outline-indigo-500 transition-colors duration-200 ease-in-out has-checked:bg-indigo-500 has-focus-visible:outline-2">
+                                <span
+                                    class="size-4 rounded-full bg-white shadow-xs ring-1 ring-gray-900/5 transition-transform duration-200 ease-in-out group-has-checked:translate-x-3.5"></span>
+                                <input id="agree-to-policies" type="checkbox" name="agree-to-policies"
+                                    aria-label="Agree to policies"
+                                    class="absolute inset-0 appearance-none focus:outline-hidden" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <button type="submit"
+                        class="block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+
+        <div class="news flex flex-col items-center">
+            <h2 class="text-center font-bold text-3xl mt-20">Join our News Letter</h2>
+            <p class="text-center text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more
+            </p>
+            <div style="margin-top: 10px;">
+                <input class="search">
+            </div>
+            <div>
+                <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <h2>Nostra</h2>
+                <p>The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div>
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <p class="subtitle">@ 2023 Nostra.com</p>
+        </div>
+
+    </section>
+</body>
+<script src="contact.js"></script>
+</html>

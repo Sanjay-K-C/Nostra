@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sign Up Bar -->
+    <section id="signup" class="text-white bg-gray-800 p-2 flex justify-evenly">
+        <h4 class="font-bold text-1xl">Sign Up and Get 20% OFF for your first Order</h4>
+        <p class="font-bold cursor-pointer" id="x">X</p>
+    </section>
+    <!-- Navbar -->
+    <section class="flex p-5 justify-between text-center sticky top-0 z-30 bg-white">
+        <h1 class="font-bold text-4xl text-gray-900">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="  gap-10 hidden md:flex">
+            <p class="hover:underline cursor-pointer"> <a href="index.html"> Home </a></p>
+            <p class="hover:underline cursor-pointer"> <a href="#">New Arrival</a></p>
+            <p class="hover:underline cursor-pointer"><a href="#">Most Wanted</a></p>
+            <p class="hover:underline cursor-pointer"><a href="#">Collections</a></p>
+            <p class="hover:underline cursor-pointer"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </section>
+    <!-- Side Navbar -->
+    <section id="sidenav"
+        class=" top-20 bg-gray-900 fixed z-20 text-white top-0 transition-all duration-1000 font-bold text-1xl"
+        style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p class="inline cursor-pointer font-bold" id="closenav">X</p>
+        </div>
+        <ul class=" flex flex-col gap-10 items-center">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Home Image -->
+    <div class="slide">
+        <div class="leftbutton">
+            <i id="left-activate" class="fa-solid fa-angle-left" style="color: white;"></i>
+        </div>
+
+        <div class="imagetext">
+            <h1>Level up your style with our</h1>
+            <h4>Summer Collections</h4>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="slideimg">
+            <img class="slidephoto" src="img/slide img1.jpg" width="100%" alt="Image">
+            <img class="slidephoto" src="img/slide img1.jpg" alt="Image">
+            <img class="slidephoto" src="img/slide img1.jpg" alt="Image">
+        </div>
+
+        <div class="rightbutton">
+
+            <i id="right-activate" class="fa-solid fa-angle-right" style="color: white;"></i>
+        </div>
+    </div>
+    <!-- Brands Section -->
+    <h2 class="mt-10 p-5 font-bold text-2xl">Brands</h2>
+    <div class="brand flex justify-between pr-10 pl-10 mt-6">
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/behance.png" alt="">
+            <p>Puma</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/adidas.png" alt="">
+            <p>Adidas</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/simple.png" alt="">
+            <p>Simple</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/leaves.png" alt="">
+            <p>Leaves</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/behance.png" alt="">
+            <p>Behance</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/twitch.png" alt="">
+            <p>Twitch</p>
+        </div>
+
+        <div class="brandproduct">
+            <img class="brands-icon" src="img/leaves.png" alt="">
+            <p>Leaves</p>
+        </div>
+    </div>
+    <!-- Customer Experiences -->
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <div class="exp">
+            <div class="exp-sec1 flex justify-between items-center mt-10 mb-10 pr-5 pl-5">
+                <div class="font-bold text-2xl">
+                    <h2>We Provide Best</h2>
+                    <h2>Customer Experiences</h2>
+                </div>
+
+                <div>
+                    <p>|| We ensure that our customer have the best shopping experience</p>
+                </div>
+            </div>
+
+            <div class="exp-sec2 flex justify-between items-center gap-5 pr-3 pl-3" id="exp-content">
+                <div class="p-3 bg-gray-500 para">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                    <h4 class="font-bold">Original Products</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-gray-500 para">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                    <h4 class="font-bold">Satisfaction Guarantee</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-gray-500 para">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                    <h4 class="font-bold">New Arrival Everyday</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-gray-500 para">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                    <h4 class="font-bold">Fast & Free Shipping</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Arrival -->
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <h1 class="mt-10 font-bold text-2xl p-5">New Arrivals</h1>
+        <section class="flex justify-between mt-2 p-5 gap-5">
+            <div class="new-product">
+                <img class="opacity-80" src="img/New Arrival/n1.jpg" alt="Arrival One">
+                <div class="shade"></div>
+                <button class="absolute">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="new-product">
+                <img class="opacity-80" src="img/New Arrival/n2.jpg" alt="Arrival Two">
+                <div class="shade"></div>
+                <button class="absolute">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="new-product">
+                <img class="opacity-80" src="img/New Arrival/n3.jpg" alt="Arrival Three">
+                <div class="shade"></div>
+                <button class="absolute"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="new-product">
+                <img class="opacity-80" src="img/New Arrival/n4.jpg" alt="Arrival Four">
+                <div class="shade"></div>
+                <button class=" absolute"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </section>
+    </div>
+    <!-- Most Wanted -->
+    <section>
+        <div class="initial-scroll-animate reveal-scroll-animate">
+            <h1 class="mt-10 font-bold text-2xl p-5">Most Wanted</h1>
+            <div class="most-wanted">
+                <div class="mostproduct relative">
+                    <img src="img/Most Wanted/m1.jpg" alt="Most Wanted Product One">
+                    <p class="most-shade">sale</p>
+                    <img class="absolute" id="heart" src="img/blackheart.png" alt="">
+                </div>
+                <div class="mostproduct relative">
+                    <img src="img/Most Wanted/m2.jpg" alt="Most Wanted Product Two">
+                    <p class="most-shade">sale</p>
+                    <img class="absolute" id="heart" src="img/blackheart.png" alt="">
+                </div>
+                <div class="mostproduct relative">
+                    <img src="img/Most Wanted/m4.jpg" alt="Most Wanted Product Four">
+                    <p class="most-shade">sale</p>
+                    <img class="absolute" id="heart" src="img/blackheart.png" alt="">
+                </div>
+                <div class="mostproduct relative">
+                    <img src="img/Most Wanted/m6.jpg" alt="Most Wanted Product Six">
+                    <p class="most-shade">sale</p>
+                    <img class="absolute" id="heart" src="img/blackheart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+        <div class="initial-scroll-animate reveal-scroll-animate">
+            <div class="offer flex justify-center items-center text-white">
+                <div>
+                    <img src="img/offer image.jpg" alt="">
+                </div>
+                <div class="offer-text font-bold">
+                    <h2>Limited Offer</h2>
+                    <h4>35% OFF on this for the first 30 Customers</h4>
+                    <button class="mt-10 text-black cursor-pointer"> Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="news flex flex-col items-center">
+            <h2 class="text-center font-bold text-3xl mt-20">Join our News Letter</h2>
+            <p class="text-center text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more
+            </p>
+            <div style="margin-top: 10px;">
+                <input class="search">
+            </div>
+            <div>
+                <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <h2>Nostra</h2>
+                <p>The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div>
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <p class="subtitle">@ 2023 Nostra.com</p>
+        </div>
+
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>
